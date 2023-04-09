@@ -1,0 +1,44 @@
+<div class="Header-Container">
+    <!-- <mat-toolbar> -->
+        <img src="https://png.pngtree.com/png-vector/20210714/ourlarge/pngtree-promotional-commercial-e-commerce-shopping-cart-png-image_3579489.jpg">&nbsp;&nbsp;&nbsp;
+        <span>P2K Shopping</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <button mat-button><a [routerLink]="['/home']" class="nav-color">Home </a></button>
+
+
+        <button mat-button [matMenuTriggerFor]="belowMenu"><a [routerLink]="['/shop']" class="nav-color">Shop</a> </button>
+        <mat-menu #belowMenu="matMenu" yPosition="below">
+            <button mat-menu-item>Shop Category </button>
+            <button mat-menu-item>Product Details</button>
+            <button mat-menu-item>Product Checkout</button>
+            <button mat-menu-item>Confirmation</button>
+            <button mat-menu-item>Shopping Cart</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="beforeMenu"><a [routerLink]="['/blog']" class="nav-color">Blog</a></button>
+        <mat-menu #beforeMenu="matMenu" yPosition="below">
+            <button mat-menu-item>Blog</button>
+            <button mat-menu-item>Blog Details</button>
+        </mat-menu>
+
+
+        <button mat-button [matMenuTriggerFor]="afterMenu"><a [routerLink]="['/pages']" class="nav-color">Pages</a></button>
+        <mat-menu #afterMenu="matMenu" xPosition="after">
+            <button mat-menu-item>Login</button>
+            <button mat-menu-item>Register</button>
+            <button mat-menu-item>Tracking</button>
+        </mat-menu>
+
+        <button mat-button><a [routerLink]="['/contact']" class="nav-color">Contact </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <a class="button" [routerLink]="['/']"><img src="https://cdn.iconscout.com/icon/free/png-256/search-1754133-1493246.png?f=webp&w=256" class="search"></a>&nbsp;&nbsp;&nbsp;
+        <a class="button" [routerLink]="['/']"><img src="https://png.pngtree.com/element_our/20190528/ourlarge/pngtree-shopping-cart-icon-image_1166717.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button class="buttons">Buy Now</button>
+
+
+
+    <!-- </mat-toolbar> -->
+</div>
+<router-outlet></router-outlet>
