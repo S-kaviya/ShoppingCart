@@ -7,13 +7,13 @@ import { AppComponent } from './app.component';
  import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
  import {MatMenuModule} from '@angular/material/menu';
  import {MatButtonModule} from '@angular/material/button';
-import { HomeComponent } from './home/home.component';
- import { ShopComponent } from './shop/shop.component';
-import { BlogComponent } from './blog/blog.component';
- import { PagesComponent } from './pages/pages.component';
- import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from '../app/Component/home/home.component';
+ import { ShopComponent } from '../app/Component/shop/shop.component';
+import { BlogComponent } from '../app/Component/blog/blog.component';
+ import { PagesComponent } from '../app/Component/pages/pages.component';
+ import { ContactComponent } from '../app/Component/contact/contact.component';
+import { FooterComponent } from '../app/Component/footer/footer.component';
+import { HeaderComponent } from '../app/Component/header/header.component';
 
 @NgModule({
   declarations: [
