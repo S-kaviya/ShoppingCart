@@ -23,12 +23,9 @@
         </mat-menu>
 
 
-        <button mat-button [matMenuTriggerFor]="afterMenu"><a [routerLink]="['/pages']" class="nav-color">Pages</a></button>
-        <mat-menu #afterMenu="matMenu" xPosition="after">
-            <button mat-menu-item>Login</button>
-            <button mat-menu-item>Register</button>
-            <button mat-menu-item>Tracking</button>
-        </mat-menu>
+        <button mat-button><a [routerLink]="['/login']" class="nav-color">Login</a></button>
+        
+        
 
         <button mat-button><a [routerLink]="['/contact']" class="nav-color">Contact </a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 

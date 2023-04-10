@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-// import { NgModule } from '@angular/compiler/src/core';
  import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
  import {MatMenuModule} from '@angular/material/menu';
  import {MatButtonModule} from '@angular/material/button';
@@ -14,6 +13,9 @@ import { BlogComponent } from '../app/Component/blog/blog.component';
  import { ContactComponent } from '../app/Component/contact/contact.component';
 import { FooterComponent } from '../app/Component/footer/footer.component';
 import { HeaderComponent } from '../app/Component/header/header.component';
+import { LoginComponent } from './Component/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { HeaderComponent } from '../app/Component/header/header.component';
      PagesComponent,
      ContactComponent,
      FooterComponent,
-     HeaderComponent
+     HeaderComponent,
+     LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,9 @@ import { HeaderComponent } from '../app/Component/header/header.component';
    MatToolbarModule,
      BrowserAnimationsModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    ReactiveFormsModule,
+    HttpClientModule
     
   
   
