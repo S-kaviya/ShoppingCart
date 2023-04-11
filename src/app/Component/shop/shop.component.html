@@ -1,3 +1,34 @@
-<div class="Body-Container">
-    Shop works
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+<div class="homebanner">
+    <img src="https://static.vecteezy.com/system/resources/previews/014/393/597/non_2x/cyber-monday-sale-banner-with-90-s-retro-style-illustration-background-for-media-promotion-web-banner-and-social-media-post-vector.jpg" style="width: 100%">
+</div>
+<section class="blog-banner-area" id="category">
+    <div class="container h-100">
+        <div class="blog-banner">
+            <div class="text-center">
+                <h1 style="text-align: center;">Shop</h1>
+            </div>
+        </div>
+</div>
+</section>
+<div class="container">
+    <input type="text"  placeholder="Search for a product in this collection">
+   <div class="catbar">
+        <p style="float: left; font-size: 20px"> <span>Products</span></p>
+        <select style="float: right;font-family:'Roboto',sans-serif ;font-size: 20px; font-weight: 100;">
+            <option>{{selectedCategory}}</option>
+            <option *ngFor="let category of categories" [value]="category">{{category}}</option>
+        </select>
+   </div>
+</div>
+<div class="list" >
+    <div class="card" *ngFor="let product of products">
+        <a href="#"><img src="{{product.image}}" alt="{{product.name}}" style="width: 100%;"/></a>
+        <div class="card-body">
+        <p>{{product.category}}</p>
+        <h4>{{product.name}}</h4>
+        <p>{{product.price|currency:"INR":"symbol"}}</p>
+        </div>
+    </div>&nbsp;
 </div>

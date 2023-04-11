@@ -1,5 +1,56 @@
-.Body-Container
-{
-    background-color: aqua;
-    height: 1000px;
+
+.container{
+    padding: 30px 10px 30px 10px;
+}
+.homebanner{
+padding-top: 20px;
+
+}
+
+h1{
+    font-family: 'Oswald',sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 35px;
+    padding: 40px 0px 20px 20px;
+}
+span{
+    border-bottom: 2px solid #384aeb;
+    padding-bottom: 8px;
+}
+.list{
+    padding: 40px 0px 30px 20px;
+}
+.card {
+    max-width: 270px;
+    max-height: 280px;
+    border: none;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    display: inline-block;
+    padding: 20px 20px 0px 20px;
+
+  }
+  
+.card-body{
+    padding: 20px;
+}
+h4{
+    font-family: 'Oswald',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+a :hover{
+    color: #384aeb;
+    cursor: pointer;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    color:#978c80;
+    font-size: 15px;
+}
+.product-price{
+    font-size: 18px;
+    font-weight: 500;
 }
