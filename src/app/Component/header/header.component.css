@@ -7,6 +7,9 @@
     font-weight: bold;
     font-size: larger;
     height: 50px;
+    position: sticky;
+    top:0%;
+    background-color: #1434A4;
 }
 
 p {

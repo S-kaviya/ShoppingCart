@@ -2,6 +2,7 @@
     width: 100%;
     background-image: linear-gradient(to bottom right, #0096FF, #5D3FD3);
     height: 60vh;
+    bottom: 0%;
 }
 
 .footer .col {
@@ -49,49 +50,6 @@
     clear: both;
 }
 
-
-/* @media only screen and (min-width: 1280px) {
-    .contain {
-      width: 1200px;
-      margin: 0 auto;
-    }
-  }
-  @media only screen and (max-width: 1139px) {
-    .contain .address {
-      width: 1000px;
-      display: block;
-    }
-    .address h2 {
-      margin: 0px;
-    }
-  }
-  @media only screen and (max-width: 950px) {
-    .footer .col {
-      width: 33%;
-    }
-    .footer .col h2 {
-      font-size: 14px;
-    }
-    .footer .col ul li {
-      font-size: 13px;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-      .footer .col {
-        width: 50%;
-      }
-      .footer .col h2 {
-        font-size: 14px;
-      }
-      .footer .col ul li {
-        font-size: 13px;
-      }
-  }
-  @media only screen and (max-width: 340px) {
-    .footer .col {
-      width: 100%;
-    }
-  } */
 
 footer .contain .button {
     background-color: #c2fbd7;
