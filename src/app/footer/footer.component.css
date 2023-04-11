@@ -155,3 +155,67 @@ footer .contain .button {
     height: 33px;
     width: 25px;
 }
+
+.copyright {
+    background-image: linear-gradient(to bottom right, #00008B, #1F51FF);
+    text-align: center;
+    color: white !important;
+    height: 40px;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+@media only screen and (min-width: 1280px) {
+    .contain {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    footer .contain .button {
+        width: auto !important;
+    }
+}
+
+@media only screen and (max-width: 1139px) {
+    .contain .address {
+        width: 1000px;
+        display: block;
+    }
+    .address h2 {
+        margin: 0px;
+    }
+    footer .contain .button {
+        width: auto !important;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .footer .col {
+        width: 33%;
+    }
+    .footer .col h2 {
+        font-size: 14px;
+    }
+    .footer .col ul li {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer .col {
+        width: 50%;
+    }
+    .footer .col h2 {
+        font-size: 14px;
+    }
+    .footer .col ul li {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .footer .col {
+        width: 100%;
+    }
+}

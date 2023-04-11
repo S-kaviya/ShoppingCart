@@ -8,4 +8,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 })
 export class AppComponent {
   title = 'p2kshopping';
+  // isMenuOpen=false;
+  // toggleMenu(): void {
+  //   this.isMenuOpen= !this.isMenuOpen;
+  // }
 }
+
