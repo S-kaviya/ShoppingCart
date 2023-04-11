@@ -1,3 +1,4 @@
+
 .blog-banner-area
 {height:280px;position:relative;z-index:1}
 @media (min-width: 1000px)
@@ -79,4 +80,5 @@ span{
     padding-bottom: 8px;
     color: black;
     font-family: 'Oswald',sans-serif;
+
 }
