@@ -1,51 +1,59 @@
-<div class="Header-Container">
-  <img
-    src="https://png.pngtree.com/png-vector/20210714/ourlarge/pngtree-promotional-commercial-e-commerce-shopping-cart-png-image_3579489.jpg"
-  />&nbsp;&nbsp;&nbsp;
-  <span>P2K Shopping</span
-  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-  <button mat-button>
-    <a [routerLink]="['/home']" class="nav-color">Home </a>
-  </button>
-
-  <button mat-button>
-    <a [routerLink]="['/shop']" class="nav-color">Shop</a>
-  </button>
-  <!-- <mat-menu #belowMenu="matMenu" yPosition="below">
-    <button mat-menu-item>Shop Category</button>
-    <button mat-menu-item>Product Details</button>
-    <button mat-menu-item>Product Checkout</button>
-    <button mat-menu-item>Confirmation</button>
-    <button mat-menu-item>Shopping Cart</button>
-  </mat-menu> -->
-
-  <button mat-button>
-    <a [routerLink]="['/blog']" class="nav-color">Blog</a>
-  </button>
-  <!-- <mat-menu #beforeMenu="matMenu" yPosition="below">
-    <button mat-menu-item>Blog</button>
-    <button mat-menu-item>Blog Details</button>
-  </mat-menu> -->
-
-  <button mat-button>
-    <a [routerLink]="['/login']" class="nav-color">Login</a>
-  </button>
-
-  <button mat-button>
-    <a [routerLink]="['/contact']" class="nav-color">Contact </a></button
-  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-  <a class="button" [routerLink]="['/']"
-    ><img
-      src="https://cdn.iconscout.com/icon/free/png-256/search-1754133-1493246.png?f=webp&w=256"
-      class="search" /></a
-  >&nbsp;&nbsp;&nbsp;
-  <a class="button" [routerLink]="['/']"
-    ><img
-      src="https://png.pngtree.com/element_our/20190528/ourlarge/pngtree-shopping-cart-icon-image_1166717.jpg" /></a
-  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-  <button class="buttons">Buy Now</button>
+<div class="Container">
+  <div class="LeftContainer">
+    <img class="shopImg" src="https://themewagon.github.io/aroma/img/logo.png"/>
+  </div>
+  <div class="MiddleContainer">
+    <header>
+      <nav>
+        <ul>
+          <li><a [routerLink]="['']" class="nav-color">Home </a></li>
+          <li><a [routerLink]="['/shop']" class="nav-color">Shop</a></li>
+          <li><a [routerLink]="['/blog']" class="nav-color">Blog</a></li>
+          <li><a [routerLink]="['/login']" class="nav-color">Login</a></li>
+          <li><a [routerLink]="['/contact']" class="nav-color">Contact </a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div class="RightContainer">
+    <div class="IconContainer">
+      <div class="sIcon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="{1.5}"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+          />
+        </svg>
+      </div>
+      <div class="tIcon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="{1.5}"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="BuyBtn">
+      <button class="btn btn-primary Bbtn">Buy</button>
+    </div>
+  </div>
 </div>
+
 <router-outlet></router-outlet>
