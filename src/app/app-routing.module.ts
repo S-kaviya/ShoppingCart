@@ -6,6 +6,9 @@ import { BlogComponent } from './Component/blog/blog.component';
 import { PagesComponent } from '../app/Component/pages/pages.component';
 import { ContactComponent } from '../app/Component/contact/contact.component';
 import { LoginComponent } from './Component/login/login.component';
+import { MenClothingComponent } from './men-clothing/men-clothing.component';
+import { WomenClothingComponent } from './women-clothing/women-clothing.component';
+import { KidsClothingComponent } from './kids-clothing/kids-clothing.component';
 
 const routes: Routes = [
 
@@ -14,7 +17,10 @@ const routes: Routes = [
   {path: 'blog', component: BlogComponent},
   {path: 'pages', component: PagesComponent},
   {path: 'contact', component: ContactComponent},
-  {path:'login',component:LoginComponent}
+  {path:'login',component:LoginComponent},
+  {path:'menclothing',component:MenClothingComponent},
+  {path:'womenclothing',component:WomenClothingComponent},
+  {path:'kidsclothing',component:KidsClothingComponent}
 ];
 
 @NgModule({
