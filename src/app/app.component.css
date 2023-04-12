@@ -1,62 +1,62 @@
-             .example-spacer {
-                 flex: 1 1 auto !important;
-             }
-             
-             p {
-                 color: #0000FF;
-                 font-weight: bold;
-                 font-size: larger;
-                 height: 90px;
-             }
-             
-             .container {
-                 height: 90px;
-                 background: white !important;
-             }
-             
-             .buttons {
-                 background-color: #0096FF;
-                 border-radius: 70px;
-                 box-shadow: #89CFF0;
-                 color: white;
-                 cursor: pointer;
-                 display: inline-block;
-                 font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
-                 padding: 7px 15px;
-                 text-align: center;
-                 text-decoration: none;
-                 transition: all 250ms;
-                 border: 0;
-                 font-size: 16px;
-                 user-select: none;
-                 -webkit-user-select: none;
-                 touch-action: manipulation;
-             }
-             
-             .buttons:hover {
-                 box-shadow: #89CFF0;
-                 transform: scale(1.05) rotate(-1deg);
-             }
-             
-             .bg-img {
-                 background-image: url('src\app\logoproject.jpeg');
-             }
-             
-             img {
-                 height: 50px;
-                 width: 50px;
-             }
-             
-             span {
-                 color: #1434A4;
-                 font-family: 'Alkatra', cursive;
-             }
-             
-             .search {
-                 height: 30px;
-                 width: 30px;
-             }
-             
-             .nav-color {
-                 color: black !important;
-             }
+.example-spacer {
+  flex: 1 1 auto !important;
+}
+
+p {
+  color: #0000ff;
+  font-weight: bold;
+  font-size: larger;
+  height: 90px;
+}
+
+.container {
+  height: 90px;
+  background: white !important;
+}
+
+.buttons {
+  background-color: #0096ff;
+  border-radius: 70px;
+  box-shadow: #89cff0;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttons:hover {
+  box-shadow: #89cff0;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.bg-img {
+  background-image: url("src\app\logoproject.jpeg");
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+span {
+  color: #1434a4;
+  font-family: "Alkatra", cursive;
+}
+
+.search {
+  height: 30px;
+  width: 30px;
+}
+
+.nav-color {
+  color: black !important;
+}

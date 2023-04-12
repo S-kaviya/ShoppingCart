@@ -9,24 +9,24 @@
     <a [routerLink]="['/home']" class="nav-color">Home </a>
   </button>
 
-  <button mat-button [matMenuTriggerFor]="belowMenu">
+  <button mat-button>
     <a [routerLink]="['/shop']" class="nav-color">Shop</a>
   </button>
-  <mat-menu #belowMenu="matMenu" yPosition="below">
+  <!-- <mat-menu #belowMenu="matMenu" yPosition="below">
     <button mat-menu-item>Shop Category</button>
     <button mat-menu-item>Product Details</button>
     <button mat-menu-item>Product Checkout</button>
     <button mat-menu-item>Confirmation</button>
     <button mat-menu-item>Shopping Cart</button>
-  </mat-menu>
+  </mat-menu> -->
 
-  <button mat-button [matMenuTriggerFor]="beforeMenu">
+  <button mat-button>
     <a [routerLink]="['/blog']" class="nav-color">Blog</a>
   </button>
-  <mat-menu #beforeMenu="matMenu" yPosition="below">
+  <!-- <mat-menu #beforeMenu="matMenu" yPosition="below">
     <button mat-menu-item>Blog</button>
     <button mat-menu-item>Blog Details</button>
-  </mat-menu>
+  </mat-menu> -->
 
   <button mat-button>
     <a [routerLink]="['/login']" class="nav-color">Login</a>
