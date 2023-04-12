@@ -16,6 +16,9 @@ import { HeaderComponent } from '../app/Component/header/header.component';
 import { LoginComponent } from './Component/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MenClothingComponent } from './men-clothing/men-clothing.component';
+import { WomenClothingComponent } from './women-clothing/women-clothing.component';
+import { KidsClothingComponent } from './kids-clothing/kids-clothing.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { HttpClientModule } from '@angular/common/http';
      ContactComponent,
      FooterComponent,
      HeaderComponent,
-     LoginComponent
+     LoginComponent,
+     MenClothingComponent,
+     WomenClothingComponent,
+     KidsClothingComponent
   ],
   imports: [
     BrowserModule,

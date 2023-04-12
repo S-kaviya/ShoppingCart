@@ -99,10 +99,49 @@
         </div>
     </div>
 
+    <!-- Banner for Category Selection -->
+    <div class="category-banner">
+        <h1 style="text-align: center; color:#003c7a; font-weight: 600; padding-top: 70px;">SHOP BY</h1>
+        <div class="list" style="padding: 30px 13% 30px 13%">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://medias.spotern.com/wanted/w1280/48/48414-1562827795.jpg" alt="Avatar" style="width:100%">
+                  </div>
+                  <div class="flip-card-back">
+                    <a routerLink="['menclothing']"><h1>For Him</h1></a>
+                    <p style="color:white">Shirts, T-Shirts & Pants</p> 
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                   <img src="https://nationaltoday.com/wp-content/uploads/2022/07/34-national-amelia-day-300x300.jpg" alt="Avatar" style="width:100%">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>For Her</h1> 
+                    <p style="color:white">Chudi, Plazo & Jewels</p> 
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://i.pinimg.com/originals/13/b4/0a/13b40a47a56c97d0b520ec3a752dcbc6.jpg" alt="Avatar" style="width:100%">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>For Kids</h1> 
+                    <p style="color:white">Child Wears</p> 
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
     <!-- Second Container of Home Page -->
     <div class="container">
 
-        <h1>Best<span>Seller</span></h1>
+        <h1>Best <span>Seller</span></h1>
         <div class="list">
             <div class="card">
                 <img src="https://cdn.shopify.com/s/files/1/0390/2985/products/01-WBG_021cf9a2-2c1f-408b-94fb-531ead2814de_750x.jpg?v=1664171245" alt="Avatar" style="width:100%">
@@ -138,15 +177,7 @@
             </div>
         </div>    
     </div>
-    <section class="blog-banner-area" id="category">
-        <div class="container h-100">
-            <div class="blog-banner">
-                <div class="text-center">
-                    <h1 style="text-align: center;">Shop</h1>
-                </div>
-            </div>
-    </div>
-    </section>
-</body>
+    <router-outlet></router-outlet>
 
+</body>
 </html>
