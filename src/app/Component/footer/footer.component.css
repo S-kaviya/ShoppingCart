@@ -1,115 +1,38 @@
-.footer {
-    width: 100%;
-    background-image: linear-gradient(to bottom right, #0096FF, #5D3FD3);
-    height: 60vh;
-    bottom: 0%;
+.footer-section {
+  background: #166bc0;
+  padding: 50px 0px 50px;
+}
+.container,.demo {
+    display: flex;
 }
 
-.footer .col {
-    width: 200px;
-    height: auto;
-    float: left;
-    box-sizing: border-box;
-    padding: 20px;
+.row-one-text {
+  font-size: 24px;
+  font-weight: 600;
+  color: aliceblue;
+  margin-top: 10px;
 }
-
-.footer .col h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    line-height: 17px;
-    padding: 10px 0;
-    color: yellow;
-    text-transform: uppercase;
-    font: TypoGraphica;
+.quick-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: aliceblue;
 }
-
-.footer .col ul {
-    list-style-type: none;
-    padding: 0;
+.Item-list {
+  margin-top: 16px;
+  font-size: 18px;
+  color: #d6d6d6;
 }
-
-.footer .col ul li {
-    color: white;
-    font-size: 15px;
-    padding: 5px 0px;
+.contact {
+  margin-top: 16px;
+  display: flex;
+  font-size: 20px;
+  color: #c7d9da;
 }
-
-.address ul li {
-    display: inline-block;
-    padding-right: 5px !important;
+.contact-text {
+  color: #b2b4b6;
+  margin-left: 10px;
 }
-
-.footer .col ul li:hover {
-    cursor: pointer;
-    color: lightgray;
-    font-weight: bold;
-}
-
-.clearfix {
-    clear: both;
-}
-
-
-footer .contain .button {
-    background-color: #c2fbd7;
-    border-radius: 100px;
-    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
-    color: green;
-    cursor: pointer;
-    display: inline-block;
-    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
-    padding: 7px 100px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 250ms;
-    border: 0;
-    font-size: 16px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    position: relative;
-    bottom: -120px;
-    right: 500px;
-    z-index: 99;
-}
-
-.button:hover {
-    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
-    transform: scale(1.05) rotate(-1deg);
-}
-
-.kurthi {
-    height: 60px;
-    width: 50px;
-}
-
-.shirts {
-    height: 60px;
-    width: 50px;
-}
-
-.kids {
-    height: 60px;
-    width: 50px;
-}
-
-.instagram {
-    height: 25px;
-    width: 25px;
-}
-
-.facebook {
-    height: 20px;
-    width: 20px;
-}
-
-.twitter {
-    height: 25px;
-    width: 25px;
-}
-
-.youtube {
-    height: 33px;
-    width: 25px;
+.span-text {
+  margin-left: 24px;
+  margin-top: -10px;
 }
