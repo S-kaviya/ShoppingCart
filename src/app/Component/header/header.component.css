@@ -87,3 +87,23 @@ nav a:hover {
   height: 35px;
   width: 150px;
 }
+@media only screen and (max-width: 1200px) {
+  .MiddleContainer
+  {
+    display: none;
+  }
+  .RightContainer
+  {
+    display: none;
+  }
+  .HambIcon
+  {
+    height: 30px;
+    width: 30px;
+  }
+  .Container
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+}
