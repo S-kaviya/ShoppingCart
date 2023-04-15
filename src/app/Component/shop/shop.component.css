@@ -80,25 +80,4 @@ span{
     padding-bottom: 8px;
     color: black;
     font-family: 'Oswald',sans-serif;
-<<<<<<< HEAD
-}
-.card_Overlay {
-    background: rgba(255,255,255,0.5);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 5px;
-    transform: translateY(30px);
-    opacity: 0;
-    z-index: -1;
-    transition: all .48s ease;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-=======
-
->>>>>>> origin
 }
