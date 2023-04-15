@@ -19,9 +19,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { MenClothingComponent } from './men-clothing/men-clothing.component';
 import { WomenClothingComponent } from './women-clothing/women-clothing.component';
 import { KidsClothingComponent } from './kids-clothing/kids-clothing.component';
+<<<<<<< HEAD
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
+=======
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
+
+>>>>>>> origin
 
 @NgModule({
   declarations: [
@@ -37,9 +43,12 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
      MenClothingComponent,
      WomenClothingComponent,
      KidsClothingComponent,
+<<<<<<< HEAD
      ProductDetailsComponent,
      CheckoutComponent,
      ConfirmationComponent
+=======
+>>>>>>> origin
   ],
   imports: [
     BrowserModule,
@@ -49,7 +58,9 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
     MatMenuModule,
     MatButtonModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    Ng2SearchPipeModule,
+    FormsModule
     
   
   

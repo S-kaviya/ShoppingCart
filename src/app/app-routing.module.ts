@@ -9,11 +9,15 @@ import { LoginComponent } from './Component/login/login.component';
 import { MenClothingComponent } from './men-clothing/men-clothing.component';
 import { WomenClothingComponent } from './women-clothing/women-clothing.component';
 import { KidsClothingComponent } from './kids-clothing/kids-clothing.component';
+<<<<<<< HEAD
 import { ProductDetailsComponent } from './product-details/product-details.component';
+=======
+import { RegisterComponent } from './Component/register/register.component';
+>>>>>>> origin
 
 const routes: Routes = [
 
-  {path: 'home', component: HomeComponent},
+  {path: '', component: HomeComponent},
   {path:'shop', component: ShopComponent},
   {path: 'blog', component: BlogComponent},
   {path: 'pages', component: PagesComponent},
@@ -22,7 +26,11 @@ const routes: Routes = [
   {path:'menclothing',component:MenClothingComponent},
   {path:'womenclothing',component:WomenClothingComponent},
   {path:'kidsclothing',component:KidsClothingComponent},
+<<<<<<< HEAD
   {path:'productdetails',component:ProductDetailsComponent}
+=======
+  {path:'register',component:RegisterComponent}
+>>>>>>> origin
 ];
 
 @NgModule({

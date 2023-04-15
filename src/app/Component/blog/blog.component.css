@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Oswald,sans serif";
+    color: #0047ab;
+}
+
+h2 {
+    font-family: "Oswald,sans serif";
+    color: #0047ab;
+}
+
+p {
+    font-family: "Roboto,sans serif", cursive;
+    color: #000080;
+}
+
+p {
+    font-family: "Roboto,sans serif", serif;
+    color: #191970;
+}
+
+
+/* Add a gray background color with some padding */
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+
+/* Header/Blog Title */
+
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+
+
+/* Left column */
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+
+/* Right column */
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+
+/* Fake image */
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Add a card effect for articles */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Footer */
+
+
+/* .footer { padding: 20px; text-align: center; background: #ddd; margin-top: 20px; } */
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+.kids {
+    width: 30px;
+}
+
+.men {
+    width: 30px;
+    height: 30px;
+}
+
+.about {
+    width: 220px;
+    height: 100px;
+}
+
+.saree {
+    width: 220px;
+    height: 250px;
+}
+
+.mensstyle {
+    width: 220px;
+    height: 250px;
+}
+
+.nightwear {
+    width: 220px;
+    height: 250px;
+}
+
+.instagram {
+    height: 25px;
+    width: 25px;
+}
+
+.facebook {
+    height: 20px;
+    width: 20px;
+}
+
+.twitter {
+    height: 25px;
+    width: 25px;
+}
+
+.youtube {
+    height: 33px;
+    width: 25px;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.container {
+    position: relative;
+    width: 1160px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: auto;
+}
+
+h3 {
+    font-family: "Patua One", cursive;
+    color: #000080;
+}
