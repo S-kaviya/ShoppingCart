@@ -19,7 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MenClothingComponent } from './men-clothing/men-clothing.component';
 import { WomenClothingComponent } from './women-clothing/women-clothing.component';
 import { KidsClothingComponent } from './kids-clothing/kids-clothing.component';
-import { RegisterComponent } from './Component/register/register.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +37,6 @@ import { RegisterComponent } from './Component/register/register.component';
      MenClothingComponent,
      WomenClothingComponent,
      KidsClothingComponent,
-     RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +46,9 @@ import { RegisterComponent } from './Component/register/register.component';
     MatMenuModule,
     MatButtonModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    Ng2SearchPipeModule,
+    FormsModule
     
   
   
