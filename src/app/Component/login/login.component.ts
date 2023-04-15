@@ -1,7 +1,7 @@
 import { Component, NgZone, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CrudService } from 'src/app/service/crud.service';
-import { FormGroup,FormBuilder } from '@angular/forms';
+import { FormGroup,FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -9,6 +9,7 @@ import { FormGroup,FormBuilder } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  [x: string]: any;
 
   loginForm: FormGroup;
   constructor(
@@ -18,25 +19,46 @@ export class LoginComponent implements OnInit {
     private crudService: CrudService
   ) { 
     this.loginForm = this.formBuilder.group({
-      username:[''],
-      password:[''],
+    username:['',[Validators.required], Validators.minLength(4), Validators.maxLength(10)],
+    password:['',[Validators.required]]
     });
   }
 
   ngOnInit(): void {
   }
 
-  onSubmit():any{
-    this.crudService.ExistingUser(this.loginForm.value).subscribe(
-      ()=>{
-        console.log('Data added successfully!');
-        // this.ngZone.run(()=> this.router.navigateByUrl('/books-list'));
+  
+  get UsernameValidate() {
+    return this.myForm.get('username');
+  }
 
-      },
-      (err) => {
-        console.log(err);
-      }
-    );
+  get password() {
+    return this.myForm.get('password');
+  }
+
+  preview: string='';
+
+  
+  onSubmit():any{
+    // this.crudService.ExistingUser(this.loginForm.value).subscribe(
+    //   ()=>{
+    //     console.log('Data added successfully!');
+    //     // this.ngZone.run(()=> this.router.navigateByUrl('/books-list'));
+
+    //   },
+    //   (err) => {
+    //     console.log(err);
+    //   }
+    // );
+    
+    this.submitted = true;
+
+    if (this.myForm.invalid) {
+        return;
+    }
+    else{
+      console.log(this.myForm.value)
+    }
   }
 
 }
