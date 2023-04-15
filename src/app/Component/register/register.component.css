@@ -1,0 +1,177 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 8%;
+    /* margin-top: 4%; */
+  }
+  
+  .loginCard {
+    display: flex;
+    flex-direction: row;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    max-width: 65%;
+    height: 90%;
+  }
+  
+  .TextField{
+    font-size: 20px;
+  }
+
+  .btn-block{
+    width: 100%;
+  }
+  
+  .InputField
+  {
+    margin-top: 10px;
+    box-shadow: none;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .WebText{
+    color: #f8f8f8;
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  
+  .AdText{
+    color: #f8f8f8;
+    margin-left: 30px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .button-account{
+    padding: 7px 42px;
+      background: transparent;
+      border-color: #fff;
+      border-radius: 50px;
+      height: 50px;
+      width: 100%;
+      color: #f8f8f8;
+      font-size: 20px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  .button-account:hover{
+    background-color: azure;
+    color: black;
+  }
+  
+  .loginCardLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 30px;
+    background-color: #007bff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .loginCardRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 30px;
+  }
+  
+  .loginCardText {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .loginCardRight .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .loginCardRight .btn {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  /* Media queries */
+  @media only screen and (max-width: 768px) {
+    .loginCard {
+      flex-direction: column;
+    }
+  
+    .loginCardLeft,
+    .loginCardRight {
+      width: 100%;
+    }
+  
+    .loginCardRight {
+      padding: 20px;
+    }
+  
+    .loginCardText {
+      font-size: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .loginCard {
+      width: 100%;
+      border-radius: 0px;
+    }
+  }
+  
+  @media only screen and (min-width:750px) and (max-width: 1200px) {
+    .button-account{
+      padding: 0px 10px;
+      font-size: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .button-account{
+      padding: 0px 10px;
+      font-size: 15px;
+    }
+    .loginContainer {
+      height: 100vh;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .button-account{
+        padding: 0px 0px;
+        font-size: 20px;
+      }
+  }
+  
+  @media only screen and (max-width: 290px) {
+   
+    .loginContainer {
+      height: 120vh;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+   
+    .loginContainer {
+      height: 106vh;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+   
+    .loginContainer {
+      height: 115vh;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+   
+    .loginContainer {
+      height: 130vh;
+    }
+  }

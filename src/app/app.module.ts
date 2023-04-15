@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MenClothingComponent } from './men-clothing/men-clothing.component';
 import { WomenClothingComponent } from './women-clothing/women-clothing.component';
 import { KidsClothingComponent } from './kids-clothing/kids-clothing.component';
+import { RegisterComponent } from './Component/register/register.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { KidsClothingComponent } from './kids-clothing/kids-clothing.component';
      LoginComponent,
      MenClothingComponent,
      WomenClothingComponent,
-     KidsClothingComponent
+     KidsClothingComponent,
+     RegisterComponent
   ],
   imports: [
     BrowserModule,
