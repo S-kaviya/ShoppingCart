@@ -22,6 +22,7 @@ import { KidsClothingComponent } from './kids-clothing/kids-clothing.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,7 @@ import { FormsModule } from '@angular/forms';
      LoginComponent,
      MenClothingComponent,
      WomenClothingComponent,
-     KidsClothingComponent
+     KidsClothingComponent,
   ],
   imports: [
     BrowserModule,

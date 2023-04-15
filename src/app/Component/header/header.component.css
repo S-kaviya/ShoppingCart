@@ -1,71 +1,110 @@
-.example-spacer {
-    flex: 1 1 auto !important;
+.Container {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 28px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-.Header-Container
-{
-    position: relative;
-    width: 100%;
-    z-index: 9999;
-    box-shadow: 0px 10px 27px 3px rgba(221,221,221,0.3);
-    
-    font-family: "Roboto",sans-serif;
+.LeftContainer {
+  width: 20%;
+  height: 70px;
+  display: flex;
+  margin-left: 10%;
 }
-
-p {
-    color: #0000FF;
-    font-weight: bold;
-    font-size: larger;
-    height: 90px;
+.RightContainer {
+  width: 30%;
+  height: 70px;
+  display: flex;
+  margin-left: -40px;
 }
-
-.container {
-    height: 90px;
-    background: white !important;
+.MiddleContainer {
+  width: 50%;
+  height: 70px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20%;
 }
-
-.buttons {
-    background-color: #0096FF;
-    border-radius: 70px;
-    box-shadow: #89CFF0;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
-    padding: 7px 15px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 250ms;
-    border: 0;
-    font-size: 16px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+.Logo {
+  height: 70px;
+  width: 70px;
+}
+h2 {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.2s ease-in-out;
+  margin-left: 25%;
 }
 
-.buttons:hover {
-    box-shadow: #89CFF0;
-    transform: scale(1.05) rotate(-1deg);
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.bg-img {
-    background-image: url('src\app\logoproject.jpeg');
+nav li {
+  display: inline-block;
+  margin-right: 30px;
 }
 
-img {
-    height: 50px;
-    width: 50px;
+nav li:last-child {
+  margin-right: 0;
 }
 
-span {
-    color: #1434A4;
-    font-family: 'Alkatra', cursive;
+nav a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.2s ease-in-out;
 }
 
-.search {
+nav a:hover {
+  color: #0f4b88;
+}
+
+.sIcon,
+.tIcon {
+  height: 30px;
+  width: 30px;
+}
+.IconContainer {
+  display: flex;
+  gap: 30px;
+}
+.BuyBtn {
+  margin-left: 20px;
+  margin-top: -5px;
+}
+.Bbtn {
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+}
+.shopImg {
+  height: 35px;
+  width: 150px;
+}
+@media only screen and (max-width: 1400px) {
+  .MiddleContainer
+  {
+    display: none;
+  }
+  .RightContainer
+  {
+    display: none;
+  }
+  .HambIcon
+  {
     height: 30px;
     width: 30px;
-}
-
-.nav-color {
-    color: black !important;
+  }
+  .Container
+  {
+    display: flex;
+    justify-content: space-between;
+  }
 }
