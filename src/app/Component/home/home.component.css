@@ -100,3 +100,21 @@ p{
     background-image: url('https://static.vecteezy.com/system/resources/previews/022/536/549/non_2x/modern-banner-background-colorful-blue-and-purple-gradations-circles-eps-10-free-vector.jpg');
     background-size: cover;
   }
+  .card-product__img{position:relative}
+  .card-product__imgOverlay {
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 5px;
+    transform: translateY(30px);
+    opacity: 0;
+    z-index: -1;
+    transition: all .48s ease;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
