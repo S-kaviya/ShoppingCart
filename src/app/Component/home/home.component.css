@@ -9,7 +9,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
 }
 
 .flip-card {
@@ -192,6 +191,13 @@
 }
 .card-product__img {
   position: relative;
+}
+.HeadText {
+  font-weight: 900;
+  font-size: 30px;
+}
+h4 {
+  font-weight: 600;
 }
 .card-product__imgOverlay {
   background: rgba(255, 255, 255, 0.5);
