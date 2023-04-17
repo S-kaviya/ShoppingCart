@@ -50,6 +50,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     HttpClientModule,
     FormsModule,
     Ng2SearchPipeModule
+
     
   
   
