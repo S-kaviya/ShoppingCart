@@ -1,7 +1,7 @@
 import { Component, NgZone, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CrudService } from 'src/app/service/crud.service';
-import { FormGroup,FormBuilder, Validators } from '@angular/forms';
+import { FormGroup,FormBuilder, Validators,AbstractControl,FormsModule,FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -10,13 +10,13 @@ import { FormGroup,FormBuilder, Validators } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
   [x: string]: any;
-
+  
   loginForm: FormGroup;
   constructor(
     public formBuilder: FormBuilder,
     private router: Router,
     private ngZone: NgZone,
-    private crudService: CrudService
+    private crudService: CrudService,
   ) { 
     this.loginForm = this.formBuilder.group({
     username:['',[Validators.required], Validators.minLength(4), Validators.maxLength(10)],
@@ -26,14 +26,18 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  get f():{[key:string]:AbstractControl}
+  {
+    return this.loginForm.controls;
+  }
 
   
   get UsernameValidate() {
-    return this.myForm.get('username');
+    return this.loginForm.get('username');
   }
 
   get password() {
-    return this.myForm.get('password');
+    return this.loginForm.get('password');
   }
 
   preview: string='';
@@ -53,11 +57,11 @@ export class LoginComponent implements OnInit {
     
     this.submitted = true;
 
-    if (this.myForm.invalid) {
+    if (this.loginForm.invalid) {
         return;
     }
     else{
-      console.log(this.myForm.value)
+      console.log(this.loginForm.value)
     }
   }
 

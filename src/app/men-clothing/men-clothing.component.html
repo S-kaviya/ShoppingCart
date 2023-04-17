@@ -1,22 +1,27 @@
 <div class="menContainer">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap"
-    rel="stylesheet"
-  />
-  <div class="container">
-    <input
-      type="text"
-      name="search"
-      [(ngModel)]="searchText"
-      placeholder="Search for a product in this collection"
-      class="SearchField"
-    />
-  </div>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet" />
+    <div class="container">
+        <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search for a product in this collection" class="SearchField" />
+    </div>
+    <div class="container">
+
+
+        <p style="float: left; font-size: 20px"> <span>Products</span></p>&nbsp;&nbsp;
+        <select style="float: left;font-family:'Roboto',sans-serif ;font-size: 15px; font-weight: 100;">
+        <option><a  [routerLink]="['/shop']">All Products</a></option>
+        <option><a  [routerLink]="['/menclothing']">Men Products</a></option>
+        <option><a  [routerLink]="['/womenclothing']">Women Products</a></option>
+        <option><a  [routerLink]="['/kidsclothing']">Kids Products</a></option>
+        
+            <!-- <option *ngFor="let category of categories" [value]="category">{{category}}</option> -->
+        </select>
+
+    </div>
 
   <div class="containers">
     <div class="box" *ngFor="let product of allProducts | filter : searchText">
       <div class="imgBx">
-        <a routerLink="/details/{{product.productId}}"><img src="{{ product.image }}" class="images" /></a>
+        <a href="#"><img src="{{ product.image }}" class="images" /></a>
       </div>
       <div class="content">
         <div>

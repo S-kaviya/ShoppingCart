@@ -1,45 +1,38 @@
 <div class="menContainer">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap"
-    rel="stylesheet"
-  />
-  <div class="container">
-    <input
-      type="text"
-      name="search"
-      [(ngModel)]="searchText"
-      placeholder="Search for a product in this collection"
-      class="SearchField"
-    />
-  </div>
-  <div class="containers">
-    <div class="box" *ngFor="let product of allProducts | filter : searchText">
-      <div class="imgBx">
-        <a href="#"
-          ><img src="{{ product.image }}" class="images" style="width: 100%"
-        /></a>
-      </div>
-      <div class="content">
-        <div>
-          <a href="#"
-            ><img
-              src="{{ product.like }}"
-              style="width: 25px; height: 25px"
-              class="likes" /></a
-          >&nbsp;
-          <a href="#"
-            ><img
-              src="{{ product.cart }}"
-              style="width: 25px; height: 25px; bottom: 10px; right: 5px"
-              class="carts"
-          /></a>
-          <h2>{{ product.category }}</h2>
-          <p>{{ product.title }}</p>
-          <p>{{ product.price | currency : "INR" : "symbol" }}</p>
-        </div>
-      </div>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet" />
+    <div class="container">
+        <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search for a product in this collection" class="SearchField" />
     </div>
-    &nbsp;
-  </div>
+    <div class="container">
+
+
+        <p style="float: left; font-size: 20px"> <span>Products</span></p>&nbsp;&nbsp;
+        <select style="float: left;font-family:'Roboto',sans-serif ;font-size: 15px; font-weight: 100;">
+        <option><a  [routerLink]="['/shop']">All Products</a></option>
+        <option><a  [routerLink]="['/menclothing']">Men Products</a></option>
+        <option><a  [routerLink]="['/womenclothing']">Women Products</a></option>
+        <option><a  [routerLink]="['/kidsclothing']">Kids Products</a></option>
+        
+            <!-- <option *ngFor="let category of categories" [value]="category">{{category}}</option> -->
+        </select>
+
+    </div>
+    <div class="containers">
+        <div class="box" *ngFor="let product of allProducts | filter : searchText">
+            <div class="imgBx">
+                <a href="#"><img src="{{ product.image }}" class="images" style="width: 100%" /></a>
+            </div>
+            <div class="content">
+                <div>
+                    <a href="#"><img src="{{ product.like }}" style="width: 25px; height: 25px" class="likes" /></a>&nbsp;
+                    <a href="#"><img src="{{ product.cart }}" style="width: 25px; height: 25px; bottom: 10px; right: 5px" class="carts" /></a>
+                    <h2>{{ product.category }}</h2>
+                    <p>{{ product.title }}</p>
+                    <p>{{ product.price | currency : "INR" : "symbol" }}</p>
+                </div>
+            </div>
+        </div>
+        &nbsp;
+    </div>
 </div>
 <router-outlet></router-outlet>
