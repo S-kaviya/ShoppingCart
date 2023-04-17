@@ -1,68 +1,67 @@
-import { Component, NgZone, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { CrudService } from 'src/app/service/crud.service';
-import { FormGroup,FormBuilder, Validators,AbstractControl,FormsModule,FormControl } from '@angular/forms';
+import { Component, OnInit, NgZone } from "@angular/core";
+import { Router } from "@angular/router";
+import {
+  FormControl,
+  FormGroup,
+  Validators,
+  FormBuilder,
+  AbstractControl,
+} from "@angular/forms";
+import { CrudService } from "src/app/service/crud.service";
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: "app-login",
+  templateUrl: "./login.component.html",
+  styleUrls: ["./login.component.css"],
 })
 export class LoginComponent implements OnInit {
-  [x: string]: any;
-  
-  loginForm: FormGroup;
+  loginForm: FormGroup = new FormGroup({
+    username: new FormControl(),
+    password: new FormControl(),
+  });
   constructor(
-    public formBuilder: FormBuilder,
+    private Lf: FormBuilder,
     private router: Router,
     private ngZone: NgZone,
-    private crudService: CrudService,
-  ) { 
-    this.loginForm = this.formBuilder.group({
-    username:['',[Validators.required], Validators.minLength(4), Validators.maxLength(10)],
-    password:['',[Validators.required]]
+    private LoginService: CrudService
+  ) {
+    this.loginForm = this.Lf.group({
+      username: ["", Validators.required],
+      password: ["", Validators.required],
     });
   }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-  get f():{[key:string]:AbstractControl}
-  {
-    return this.loginForm.controls;
-  }
-
-  
   get UsernameValidate() {
-    return this.loginForm.get('username');
+    return this.loginForm.get("username");
   }
-
   get password() {
-    return this.loginForm.get('password');
+    return this.loginForm.get("password");
   }
+  submit: boolean = false;
 
-  preview: string='';
+  onSubmit(): any {
+    this.submit = true;
+    console.log("Login ");
+    console.log(this.loginForm.valid);
+    console.log(this.UsernameValidate && this.password);
+    console.log(this.UsernameValidate);
+    console.log(this.password);
 
-  
-  onSubmit():any{
-    // this.crudService.ExistingUser(this.loginForm.value).subscribe(
-    //   ()=>{
-    //     console.log('Data added successfully!');
-    //     // this.ngZone.run(()=> this.router.navigateByUrl('/books-list'));
-
-    //   },
-    //   (err) => {
-    //     console.log(err);
-    //   }
-    // );
-    
-    this.submitted = true;
-
-    if (this.loginForm.invalid) {
-        return;
-    }
-    else{
-      console.log(this.loginForm.value)
+    if (
+      this.UsernameValidate?.status === "VALID" &&
+      this.password?.status === "VALID"
+    ) {
+      this.LoginService.ExistingUser(this.loginForm.value).subscribe(
+        () => {
+          console.log("Loggged in!");
+        },
+        (err) => {
+          console.log(err);
+        }
+      );
+    } else {
+      console.log("error from login ts");
     }
   }
-
 }
