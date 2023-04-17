@@ -1,65 +1,70 @@
 /* Global Styles */
+
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-  }
-  .SearchField
-  {
-      height: 50px;
-      font-size: 20px;
-  }
-  
-  /* Header Styles */
-  .homebanner {
+}
+
+.SearchField {
+    height: 50px;
+    font-size: 20px;
+}
+
+
+/* Header Styles */
+
+.homebanner {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 300px;
-  }
-  
-  .homebanner img {
+}
+
+.homebanner img {
     max-width: 100%;
     height: auto;
-  }
-  
-  .blog-banner-area {
+}
+
+.blog-banner-area {
     background-color: #f5f5f5;
-  }
-  
-  .blog-banner {
+}
+
+.blog-banner {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;
-  }
-  
-  .blog-banner h1 {
+}
+
+.blog-banner h1 {
     font-family: "Oswald", sans-serif;
     font-size: 50px;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
-  }
-  
-  /* Product Styles */
-  .menContainer {
+}
+
+
+/* Product Styles */
+
+.menContainer {
     padding: 20px;
-  }
-  
-  input[type="text"] {
+}
+
+input[type="text"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
-  }
-  
-  .catbar {
+}
+
+.catbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,126 +73,134 @@
     margin-bottom: 10px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-  }
-  
-  .catbar span {
+}
+
+.catbar span {
     font-weight: bold;
     font-size: 20px;
-  }
-  
-  .containers {
+}
+
+.containers {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  .box {
+}
+
+.box {
     width: calc(33.33% - 20px);
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(47, 47, 54, 0.5);
     overflow: hidden;
-  }
-  
-  .imgBx {
+}
+
+.imgBx {
     height: 300px;
     overflow: hidden;
     position: relative;
-  }
-  .images {
+}
+
+.images {
     width: 100%;
     height: auto;
-  }
-  .imgBx img {
+}
+
+.imgBx img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -28%);
     min-width: 100%;
     min-height: 100%;
-  }
-  
-  .content {
+}
+
+.content {
     padding: 20px;
-  }
-  
-  .content h2 {
+}
+
+.content h2 {
     font-size: 18px;
     font-weight: bold;
     margin: 0 0 10px;
-  }
-  
-  .content p {
+}
+
+.content p {
     margin: 0 0 5px;
-  }
-  
-  .likes,
-  .carts {
+}
+
+.likes,
+.carts {
     margin-right: 5px;
-  }
-  
-  .likes:hover,
-  .carts:hover {
+}
+
+.likes:hover,
+.carts:hover {
     cursor: pointer;
     opacity: 0.8;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .box {
-      width: calc(50% - 20px);
+        width: calc(50% - 20px);
     }
-  }
-  
-  @media (max-width: 576px) {
+}
+
+@media (max-width: 576px) {
     .box {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-  /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) {
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
     .blog-banner-area {
-      padding: 80px 0;
+        padding: 80px 0;
     }
-  }
-  
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
     .blog-banner-area {
-      padding: 120px 0;
+        padding: 120px 0;
     }
-  }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
     .blog-banner-area {
-      padding: 150px 0;
+        padding: 150px 0;
     }
-  }
-  
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
     .blog-banner-area {
-      padding: 180px 0;
+        padding: 180px 0;
     }
-  }
-  
-  .container {
+}
+
+.container {
     margin: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .container {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
     .catbar {
-      margin-top: 20px;
-      text-align: center;
+        margin-top: 20px;
+        text-align: center;
     }
-  }
-  
+}
