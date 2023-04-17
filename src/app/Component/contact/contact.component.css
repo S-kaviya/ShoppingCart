@@ -1,5 +1,81 @@
-.Body-Container
-{
-    background-color: aqua;
-    height: 1000px;
+.banner{
+    background-color: #f1f6f7;
+    width: 100%;
+    height: 250px;
+}
+h1{
+    font-family: 'Oswald',sans-serif;
+    padding: 90px 0px;
+    text-align: center;
+}
+h2{
+    font-family: 'Oswald',sans-serif;
+}
+hr{
+    border: 2px solid black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .form-contact .form-control {
+    border-radius: 0;
+    height: 40px;
+    padding-left: 18px;
+    border-color: transparent;
+    background: rgba(130,139,178,0.1);
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input[type="text"]{
+    background-color: #f0f1f5;
+    border: none;
+    border-radius: 2px;
+    height: 60px;
+    font-size: large;
+}
+input[type="email"]{
+    background-color: #f0f1f5;
+    border: none;
+    border-radius: 2px;
+    height: 60px;
+    font-size: large;
+}
+textarea{
+    background-color: #f0f1f5;
+    border: none;
+    width: 100%;
+    height: 200px;
+    border-radius: 2px;
+    font-size: large;
 }

@@ -47,8 +47,8 @@ import { FormsModule } from '@angular/forms';
     MatMenuModule,
     MatButtonModule,
     ReactiveFormsModule,
-    HttpClientModule,
     Ng2SearchPipeModule,
+    HttpClientModule,
     FormsModule
     
   

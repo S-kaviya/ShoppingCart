@@ -18,22 +18,32 @@
 
     </div>
 
-    <div class="containers">
-        <div class="box" *ngFor="let product of allProducts | filter : searchText">
-            <div class="imgBx">
-                <a href="#"><img src="{{ product.image }}" class="images" /></a>
-            </div>
-            <div class="content">
-                <div>
-                    <a href="#"><img src="{{ product.like }}" style="width: 25px; height: 25px" class="likes" /></a>&nbsp;
-                    <a href="#"><img src="{{ product.cart }}" style="width: 25px; height: 25px; bottom: 10px; right: 5px" class="carts" /></a>
-                    <h2>{{ product.category }}</h2>
-                    <p>{{ product.title }}</p>
-                    <p>{{ product.price | currency : "INR" : "symbol" }}</p>
-                </div>
-            </div>
+  <div class="containers">
+    <div class="box" *ngFor="let product of allProducts | filter : searchText">
+      <div class="imgBx">
+        <a href="#"><img src="{{ product.image }}" class="images" /></a>
+      </div>
+      <div class="content">
+        <div>
+          <a href="#"
+            ><img
+              src="{{ product.like }}"
+              style="width: 25px; height: 25px"
+              class="likes" /></a
+          >&nbsp;
+          <a href="#"
+            ><img
+              src="{{ product.cart }}"
+              style="width: 25px; height: 25px; bottom: 10px; right: 5px"
+              class="carts"
+          /></a>
+          <h2>{{ product.category }}</h2>
+          <p>{{ product.title }}</p>
+          <p>{{ product.price | currency : "INR" : "symbol" }}</p>
         </div>
-        &nbsp;
+      </div>
     </div>
+    &nbsp;
+  </div>
 </div>
 <router-outlet></router-outlet>
