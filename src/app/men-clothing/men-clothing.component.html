@@ -16,7 +16,7 @@
   <div class="containers">
     <div class="box" *ngFor="let product of allProducts | filter : searchText">
       <div class="imgBx">
-        <a href="#"><img src="{{ product.image }}" class="images" /></a>
+        <a routerLink="/details/{{product.productId}}"><img src="{{ product.image }}" class="images" /></a>
       </div>
       <div class="content">
         <div>
