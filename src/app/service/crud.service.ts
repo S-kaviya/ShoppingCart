@@ -30,6 +30,14 @@ export class CrudService {
       .pipe(catchError(this.handleError));
   }
 
+
+  RegisterUser(data: Login): Observable<any> {
+    let API_URL = `${this.REST_API}/Register-User`;
+    return this.httpClient
+      .post(API_URL, data)
+      .pipe(catchError(this.handleError));
+  }
+
   //Get all Objects GetBooks => GetUsers
   GetUsers() {
     return this.httpClient.get(`${this.REST_API}`);

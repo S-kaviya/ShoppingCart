@@ -1,68 +1,158 @@
 <div class="loginContainer">
-    <div class="loginCard">
-      <div class="loginCardLeft">
-        <div class="loginCardText">
-          <p class="WebText">Already have an account?</p>
-          <p class="AdText">
-            There are advances being made in science and technology everyday, and
-            a good example of this is the
-          </p>
-          <!-- <button class="button button-account"><a [routerLink]="['/login']" class="button-account">Login Now</a></button> -->
-        </div>
+  <div class="loginCard">
+    <div class="loginCardLeft">
+      <div class="loginCardText">
+        <p class="WebText">Already have an account?</p>
+        <p class="AdText">
+          There are advances being made in science and technology everyday, and
+          a good example of this is the
+        </p>
+        <!-- <button class="button button-account"><a [routerLink]="['/login']" class="button-account">Login Now</a></button> -->
       </div>
-  
-      <div class="loginCardRight">
-        <div class="Body-Container">
-          <div class="row justify-content-center">
-            <div class="col-md-12">
-              <!-- <form [formGroup]="loginForm" (ngSubmit)="onSubmit()"> -->
-                <form>
-                <div class="form-group">
-                  <label class="TextField">Username</label>
-                  <input
-                    class="form-control InputField"
-                    type="text"
-                    formControlName="username"
-                    required
-                  />
+    </div>
+
+    <div class="loginCardRight">
+      <div class="Body-Container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <form [formGroup]="regForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <label class="TextField">Username</label>
+                <input
+                  class="form-control InputField"
+                  type="text"
+                  formControlName="username"
+                  required
+                />
+                <div
+                  *ngIf="username.errors?.required &&( username.touched || username.dirty)"
+                  class="text-danger size"
+                >
+                  User Name is required
                 </div>
-                <div class="form-group">
-                    <label class="TextField">Email</label>
-                    <input
-                      class="form-control InputField"
-                      type="email"
-                      formControlName="email"
-                      required
-                    />
-                  </div>
-                <div class="form-group">
-                  <label class="TextField">Password</label>
-                  <input
-                    class="form-control InputField"
-                    type="password"
-                    formControlName="password"
-                    required
-                  />
+                <div
+                  *ngIf="username.errors?.pattern &&( username.touched || username.dirty)"
+                  class="text-danger size"
+                >
+                  Name should start with alphabet
                 </div>
-                <div class="form-group">
-                    <label class="TextField">Confirm Password</label>
-                    <input
-                      class="form-control InputField"
-                      type="password"
-                      formControlName="confirmpassword"
-                      required
-                    />
-                  </div>
-                <div class="form-group">
-                  <button type="submit" class="btn btn-primary btn-block">
-                    Register
-                  </button>
+              </div>
+              <div class="form-group">
+                <label class="TextField">Email</label>
+                <input
+                  class="form-control InputField"
+                  type="email"
+                  formControlName="email"
+                  required
+                />
+                <div
+                  *ngIf="email.errors?.required && ( email.touched || email.dirty)"
+                  class="text-danger size"
+                >
+                  Email is required
                 </div>
-              </form>
-            </div>
+                <div
+                  *ngIf="email.errors?.email && ( email.touched || email.dirty)"
+                  class="text-danger size"
+                >
+                  Email should be valid
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="text"
+                  formControlName="phone"
+                  class="form-control InputField"
+                  required
+                />
+                <div
+                  *ngIf="mobile.errors?.required && ( mobile.touched || mobile.dirty)"
+                  class="text-danger size"
+                >
+                  Phone number is required
+                </div>
+                <div
+                  *ngIf="mobile.errors?.pattern&& ( mobile.touched || mobile.dirty)"
+                  class="text-danger size"
+                >
+                  Number is Invalid
+                </div>
+                <div
+                  class="text-danger size"
+                  *ngIf="mobile.errors?.minlength&& ( mobile.touched || mobile.dirty)"
+                >
+                  Number is short
+                </div>
+                <div
+                  *ngIf="mobile.errors?.maxlength && ( mobile.touched || mobile.dirty)"
+                  class="text-danger size"
+                >
+                  Number is Long
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="TextField">Password</label>
+                <input
+                  class="form-control InputField"
+                  type="password"
+                  formControlName="password"
+                  required
+                />
+                <div
+                  *ngIf="pwd.errors?.required && ( pwd.touched || pwd.dirty)"
+                  class="text-danger size"
+                >
+                  Pasword is required
+                </div>
+                <div
+                  *ngIf="pwd.errors?.pattern && ( pwd.touched || pwd.dirty)"
+                  class="text-danger size"
+                >
+                  Password should be valid
+                </div>
+                <div
+                  *ngIf="pwd.errors?.minlength ||pwd.errors?.maxlength && ( pwd.touched || pwd.dirty)"
+                  class="text-danger size"
+                >
+                  Password should be atleast 8 and maximum 12 chars
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="TextField">Confirm Password</label>
+                <input
+                  class="form-control InputField"
+                  type="password"
+                  formControlName="confirmpassword"
+                  required
+                />
+                <div
+                  *ngIf="cpwd.errors?.required && (cpwd.touched || cpwd.dirty)"
+                  class="text-danger size"
+                >
+                  re-Type pasword is required
+                </div>
+                <div
+                [ngStyle]="{ display: repeatPass }"
+                  class="text-danger size"
+                >
+                  Password doesn't match.
+                </div>
+              </div>
+              <div class="form-group">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-block"
+                  [disabled]="regForm.invalid"
+                >
+                  Register
+                </button>
+              </div>
+              <div class="text-success padding">{{ successMessage }}</div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+</div>
