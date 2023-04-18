@@ -14,13 +14,13 @@ import { BlogComponent } from '../app/Component/blog/blog.component';
 import { FooterComponent } from '../app/Component/footer/footer.component';
 import { HeaderComponent } from '../app/Component/header/header.component';
 import { LoginComponent } from './Component/login/login.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MenClothingComponent } from './men-clothing/men-clothing.component';
 import { WomenClothingComponent } from './women-clothing/women-clothing.component';
 import { KidsClothingComponent } from './kids-clothing/kids-clothing.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { RegisterComponent } from './Component/register/register.component';
 
 
 
@@ -38,6 +38,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
      MenClothingComponent,
      WomenClothingComponent,
      KidsClothingComponent,
+     RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -46,12 +47,10 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
      BrowserAnimationsModule,
     MatMenuModule,
     MatButtonModule,
-    ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
-    Ng2SearchPipeModule
-
-    
+    Ng2SearchPipeModule,
+    ReactiveFormsModule
   
   
 ],
