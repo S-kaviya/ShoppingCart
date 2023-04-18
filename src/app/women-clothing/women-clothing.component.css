@@ -47,7 +47,36 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+.nav-tab{
+  width: 100%;
+  background-color:#f1f1f1;
+  height: 60px;
+  padding: 10px 0px;
+}
+ul{
+  text-align: center;
+}
+li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 50px;
+}
 
+li a{
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Oswald',sans-serif;
+  padding: 10px 30px;
+  color: black;
+  text-align: center;
+  font-size: large;
+}
+li a.active{
+  background-color: #2b6eea;
+  color: white;
+  border-radius: 20px;
+
+}
 
 /* Product Styles */
 
@@ -123,10 +152,12 @@ input[type="text"] {
     font-size: 18px;
     font-weight: bold;
     margin: 0 0 10px;
+    font-family: 'Oswald',sans-serif;
 }
 
 .content p {
     margin: 0 0 5px;
+    font-family: 'Roboto',sans-serif;
 }
 
 .likes,
@@ -204,3 +235,6 @@ input[type="text"] {
         text-align: center;
     }
 }
+span{
+    color:#2b6eea;
+  }

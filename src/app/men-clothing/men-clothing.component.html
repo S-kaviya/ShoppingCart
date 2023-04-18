@@ -1,4 +1,20 @@
 <div class="menContainer">
+  <div class="nav-tab">
+    <ul>
+      <li>
+        <a  [routerLink]="['/shop']">All Products</a>
+      </li>
+      <li>
+        <a  class="active" [routerLink]="['/menclothing']">Mens Clothing</a>
+      </li>
+      <li>
+        <a  [routerLink]="['/womenclothing']">Women Clothing</a>
+      </li>
+      <li>
+        <a  [routerLink]="['/kidsclothing']">Kids Clothing</a>
+      </li>
+    </ul>
+</div>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet" />
     <div class="container">
         <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search for a product in this collection" class="SearchField" />
@@ -6,15 +22,13 @@
     <div class="container">
 
 
-        <p style="float: left; font-size: 20px"> <span>Products</span></p>&nbsp;&nbsp;
-        <select style="float: left;font-family:'Roboto',sans-serif ;font-size: 15px; font-weight: 100;">
+      <h1 style="text-align: center; font-size: 30px; font-family: 'Oswald',sans-serif; padding: 20px 0px;"> <span>Mens</span> Products</h1>&nbsp;&nbsp;
+        <!-- <select style="float: left;font-family:'Roboto',sans-serif ;font-size: 15px; font-weight: 100;">
         <option><a  [routerLink]="['/shop']">All Products</a></option>
         <option><a  [routerLink]="['/menclothing']">Men Products</a></option>
         <option><a  [routerLink]="['/womenclothing']">Women Products</a></option>
         <option><a  [routerLink]="['/kidsclothing']">Kids Products</a></option>
-        
-            <!-- <option *ngFor="let category of categories" [value]="category">{{category}}</option> -->
-        </select>
+        </select> -->
 
     </div>
 
@@ -37,9 +51,9 @@
               style="width: 25px; height: 25px; bottom: 10px; right: 5px"
               class="carts"
           /></a>
-          <h2>{{ product.category }}</h2>
-          <p>{{ product.title }}</p>
-          <p>{{ product.price | currency : "INR" : "symbol" }}</p>
+          <p>{{ product.category }}</p>
+          <h2>{{ product.title }}</h2>
+          <h2>{{ product.price | currency : "INR" : "symbol" }}</h2>
         </div>
       </div>
     </div>
