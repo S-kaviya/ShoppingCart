@@ -24,7 +24,7 @@ const routes: Routes = [
   {path:'womenclothing',component:WomenClothingComponent},
   {path:'kidsclothing',component:KidsClothingComponent},
   {path:'register',component:RegisterComponent},
-  {path:'details/:productId',component:ProductDetailsComponent},
+  {path:'details',component:ProductDetailsComponent},
   {path:'contact',component:ContactComponent}
 ];
 

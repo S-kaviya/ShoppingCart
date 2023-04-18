@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
-<div class="homebanner">
+<!-- <div class="homebanner">
     <img src="https://static.vecteezy.com/system/resources/previews/014/393/597/non_2x/cyber-monday-sale-banner-with-90-s-retro-style-illustration-background-for-media-promotion-web-banner-and-social-media-post-vector.jpg" style="width: 100%">
-</div>
+</div> -->
 <!-- <section class="blog-banner-area" id="category"> -->
 <!-- <div class="container h-100">
         <div class="blog-banner">
@@ -34,8 +34,23 @@
         <li role="menuitem"><a class="dropdown-item" routerLink="/kidsclothing">Kids Products</a></li>
     </ul>
 </div> -->
-<br><br><br><br><br><br>
 <div class="menContainer">
+    <div class="nav-tab">
+        <ul>
+          <li>
+            <a class="active" [routerLink]="['/shop']">All Products</a>
+          </li>
+          <li>
+            <a  [routerLink]="['/menclothing']">Mens Clothing</a>
+          </li>
+          <li>
+            <a  [routerLink]="['/womenclothing']">Women Clothing</a>
+          </li>
+          <li>
+            <a  [routerLink]="['/kidsclothing']">Kids Clothing</a>
+          </li>
+        </ul>
+    </div>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet" />
     <div class="containers">
         <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search for a product in this collection" class="SearchField" />
@@ -43,15 +58,7 @@
     <div class="container">
 
 
-        <p style="float: left; font-size: 20px"> <span>Products</span></p>&nbsp;&nbsp;
-        <select style="float: left;font-family:'Roboto',sans-serif ;font-size: 15px; font-weight: 100;">
-            <option><a  [routerLink]="['/shop']">All Products</a></option>
-           <option> <a [routerLink]="['/menclothing']">Men Products</a></option>
-            <option><a  [routerLink]="['/womenclothing']">Women Products</a></option>
-            <option><a  [routerLink]="['/kidsclothing']">Kids Products</a></option>
-            
-                <!-- <option *ngFor="let category of categories" [value]="category">{{category}}</option> --> 
-     </select>
+        <h1 style="text-align: center; font-size: 30px; font-family: 'Oswald',sans-serif; padding: 20px 0px;"> <span>All</span> Products</h1>&nbsp;&nbsp;
 
     </div>
 
@@ -66,9 +73,9 @@
                 <div>
                     <a href="#"><img src="{{ product.like }}" style="width: 25px; height: 25px" class="likes" /></a>&nbsp;
                     <a href="#"><img src="{{ product.cart }}" style="width: 25px; height: 25px; bottom: 10px; right: 5px" class="carts" /></a>
-                    <h2>{{ product.category }}</h2>
-                    <p>{{ product.title }}</p>
-                    <p>{{ product.price | currency : "INR" : "symbol" }}</p>
+                    <p>{{ product.category }}</p>
+                    <h2>{{ product.title }}</h2>
+                    <h2>{{ product.price | currency : "INR" : "symbol" }}</h2>
                 </div>
             </div>
         </div>
